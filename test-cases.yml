@@ -1,23 +1,83 @@
+---
 - id: CASE1 
-
   summary: |
-    Краткое описание тест кейса. Пример: Проверка входа пользователя с существующими логином и паролем
+    Поиск товара по ключевым словам, например, IPhone
   requirement: |
-    Тестируемое требование. Например:
-  description: |
-
+    Отображение товаров содержащих ключевые слова по поиску
   prerequisites: |
-    Это условия, которые необходимы для проведения тест кейса. Они должны быть выполнены еще до запуска тест кейса.
-    Например: открыта страница логина
+    no-data
   test-data: |
-    Тестовые данные
-    Логин = ilona Пароль = password
-  status: <здесь будет статус>
+    empty
   steps:
-    - Вводим логин
-    - Вводим пароль
-    - Нажимаем кнопку "Войти"
+    - Вводим слово IPhone в строку поиска
   expected-result: |
-    Пользователь должен попасть на главную страницу
-  actual-result: |
-    Как ожидали
+    На странице отображаются товары, содержащие ключевое слово поиска
+
+- id: CASE2
+  summary: |
+    Поиск товара по категории, например, laptops    
+  requirement: |
+    Отображение товаров, попадающих под категорию
+  prerequisites: |
+    no-data
+  test-data: |
+    empty
+  steps:
+    - Нажимаем на выпадающее окно "Категория"
+    - Выбираем из списка laptops
+  expected-result: |
+    На странице отображаются товары подходящие под категорию
+
+ - id: CASE 
+  summary: |
+    Поиск товаров по фильтру бренда, например Apple
+  requirement: |
+    Отображение товаров конкретного бренда
+  prerequisites: |
+    no-data
+  test-data: |
+    empty
+  steps:
+    - Ставим галочку слева от слова "Apple" в списке с брендами
+  expected-result: |
+    На странице отображаются товары только конкретного бренда
+    
+ - id: CASE 
+  summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    no-data
+  test-data: |
+    empty
+  steps:
+    - 
+  expected-result: |
+    
+ - id: CASE 
+  summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    no-data
+  test-data: |
+    empty
+  steps:
+    - 
+  expected-result: |
+    
+ - id: CASE 
+  summary: |
+    
+  requirement: |
+    
+  prerequisites: |
+    no-data
+  test-data: |
+    empty
+  steps:
+    - 
+  expected-result: |
+    
