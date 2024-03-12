@@ -175,3 +175,5 @@
   - summary: |
       Переход на начальную страницу
     status: pass
+
+    bugreports: []
