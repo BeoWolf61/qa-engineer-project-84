@@ -3,55 +3,55 @@
     Поиск товара по ключевым словам, например, IPhone
   status: pass
 
-  - summary: |
+- summary: |
     Поиск товара по категории
   status: pass
 
-  - summary: |
+- summary: |
     Поиск товаров по фильтру бренда
   status: pass
 
-  - summary: |
+- summary: |
     Поиск товара по фильтру цены "ДО"
   status: fail
 
-  - summary: |
+- summary: |
     Поиск товара по фильтру цены "ОТ"
   status: fail
 
-  - summary: |
+- summary: |
     Просмотр карточки товара
   status: pass
 
-  - summary: |
+- summary: |
      Добавление товара в корзину со страницы магазина
   status: pass
 
-  - summary: |
+- summary: |
     Добавление товара в корзину из карточки товара
   status: pass
 
-  - summary: |
+- summary: |
     Удаление товара из корзины
   status: pass
 
-  - summary: |
+- summary: |
     Заказ выбранного товара
   status: fail
     #если рассматривать данный тест-кейс со стороны визуала, то он должен иметь статус pass, но если рассматривать со стороны его работоспособности с сервером, то fail
 
-  - summary: |
+- summary: |
     Автоматическая очистка корзины после совершения заказа
   status: fail
 
-  - summary: |
+- summary: |
     Обновление остатков товара после заказа
   status: fail
 
-  - summary: |
+- summary: |
     Переключение между страницами
   status: fail
 
-    - summary: |
+- summary: |
     Переход на начальную страницу
   status: fail
