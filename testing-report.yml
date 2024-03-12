@@ -1,0 +1,48 @@
+---
+- summary: |
+    Поиск товара по ключевым словам, например, IPhone
+  status: pass
+
+  - summary: |
+    Поиск товара по категории
+  status: pass
+
+  - summary: |
+    Поиск товаров по фильтру бренда
+  status: pass
+
+  - summary: |
+    Поиск товара по фильтру цены "ДО"
+  status: fail
+
+  - summary: |
+    Поиск товара по фильтру цены "ОТ"
+  status: fail
+
+  - summary: |
+    Просмотр карточки товара
+  status: pass
+
+  - summary: |
+     Добавление товара в корзину со страницы магазина
+  status: pass
+
+  - summary: |
+    Добавление товара в корзину из карточки товара
+  status: pass
+
+  - summary: |
+    Удаление товара из корзины
+  status: pass
+
+  - summary: |
+    Заказ выбранного товара
+  status: fail
+
+  - summary: |
+    Автоматическая очистка корзины после совершения заказа
+  status: fail
+
+  - summary: |
+    Обновление остатков товара после заказа
+  status: fail
