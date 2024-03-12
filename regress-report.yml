@@ -1,5 +1,5 @@
 ---
-test-cases:
+- test-cases:
   - summary: |
       Поиск товара по ключевым словам, например, IPhone
     status: pass
@@ -8,9 +8,9 @@ test-cases:
       Поиск товара по ключевым словам, например, IPhone
     status: pass
 
-bugreports: []
+- bugreports: []
 
-test-cases:
+- test-cases:
   - summary: |
       Поиск товара по категории
     status: pass
@@ -19,9 +19,9 @@ test-cases:
       Поиск товара по категории
     status: pass
 
-bugreports: []
+- bugreports: []
 
-test-cases:
+- test-cases:
   - summary: |
       Поиск товаров по фильтру бренда
     status: pass
@@ -30,7 +30,7 @@ test-cases:
       Поиск товаров по фильтру бренда
     status: pass
 
-bugreports: 
+- bugreports: 
 
   - summary: |
       Сломался фильтр по бренду при использовании фильтра по категории
@@ -45,7 +45,7 @@ bugreports:
     actual-result: |
       Не происходит никаких изменений
 
-test-cases:
+- test-cases:
   - summary: |
       Поиск товара по фильтру цены "ДО"
     status: fail
@@ -54,7 +54,7 @@ test-cases:
       Поиск товара по фильтру цены "ДО"
     status: fail
 
-bugreports: []
+- bugreports: []
 
   - summary: |
       Фильтр цены не работает при значении ниже существующих
@@ -68,7 +68,7 @@ bugreports: []
     actual-result: |
       Ничего не изменяется
 
-test-cases:
+- test-cases:
   - summary: |
       Поиск товара по фильтру цены "ОТ"
     status: fail
@@ -77,9 +77,9 @@ test-cases:
       Поиск товара по фильтру цены "ОТ"
     status: fail
 
-bugreports: []
+- bugreports: []
 
-test-cases:
+- test-cases:
   - summary: |
       Просмотр карточки товара
     status: pass
@@ -90,7 +90,7 @@ test-cases:
 
     bugreports: []
 
-test-cases:
+- test-cases:
   - summary: |
       Добавление товара в корзину со страницы магазина
     status: pass
@@ -99,9 +99,9 @@ test-cases:
       Добавление товара в корзину со страницы магазина
     status: pass
 
-bugreports: []
+- bugreports: []
 
-test-cases:
+- test-cases:
   - summary: |
       Добавление товара в корзину из карточки товара
     status: pass
@@ -110,9 +110,9 @@ test-cases:
       Добавление товара в корзину из карточки товара
     status: pass
 
-bugreports: []
+- bugreports: []
 
-test-cases:
+- test-cases:
   - summary: |
       Удаление товара из корзины
     status: pass
@@ -121,9 +121,9 @@ test-cases:
       Удаление товара из корзины
     status: pass
 
-bugreports: []
+- bugreports: []
 
-test-cases:
+- test-cases:
   - summary: |
       Заказ выбранного товара
     status: fail
@@ -132,9 +132,9 @@ test-cases:
       Заказ выбранного товара
     status: fail
 
-bugreports: []
+- bugreports: []
 
-test-cases:
+- test-cases:
   - summary: |
       Автоматическая очистка корзины после совершения заказа
     status: fail
@@ -143,9 +143,9 @@ test-cases:
       Автоматическая очистка корзины после совершения заказа
     status: fail
 
-bugreports: []
+- bugreports: []
 
-test-cases:
+- test-cases:
   - summary: |
       Обновление остатков товара после заказа
     status: fail
@@ -154,9 +154,9 @@ test-cases:
       Обновление остатков товара после заказа
     status: fail
 
-bugreports: []
+- bugreports: []
 
-test-cases:
+- test-cases:
   - summary: |
       Переключение между страницами
     status: fail
@@ -165,9 +165,9 @@ test-cases:
       Переключение между страницами
     status: pass
 
-bugreports: []
+- bugreports: []
 
-test-cases:
+- test-cases:
   - summary: |
       Переход на начальную страницу
     status: fail
@@ -176,5 +176,5 @@ test-cases:
       Переход на начальную страницу
     status: pass
 
-bugreports: []
+- bugreports: []
 
