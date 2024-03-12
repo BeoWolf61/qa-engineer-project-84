@@ -2,7 +2,7 @@
 - id: CASE1 
   summary: |
     Поиск товара по ключевым словам, например, IPhone
--requirement: |
+  requirement: |
     Отображение товаров содержащих ключевые слова по поиску
   prerequisites: |
     no-data
