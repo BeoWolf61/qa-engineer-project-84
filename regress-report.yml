@@ -1,176 +1,97 @@
----
 - test-cases:
-  - summary: |
-      Поиск товара по ключевым словам, например, IPhone
-    status: pass
+    - summary: |
+        Поиск товара по ключевым словам, например, IPhone
+      status: pass
+      bugreports: []
 
-  - summary: |
-      Поиск товара по ключевым словам, например, IPhone
-    status: pass
+    - summary: |
+        Поиск товара по категории
+      status: pass
+      bugreports: []
 
-- bugreports: []
+    - summary: |
+        Поиск товаров по фильтру бренда
+      status: pass
+      bugreports: []
 
-- test-cases:
-  - summary: |
-      Поиск товара по категории
-    status: pass
+    - summary: |
+        Сломался фильтр по бренду при использовании фильтра по категории
+      environment: |
+        Google Chrome Версия 122.0.6261.112 (Официальная сборка), (64 бит)
+        OC Windows 22000.2538
+      steps-to-reproduce: |
+        - Выбираем пустой фильтр по категории
+        - Выбираем любой фильтр товара с брендом
+      expected-result: |
+        Должна происходить фильтрация по выбранному бренду
+      actual-result: |
+        Не происходит никаких изменений
+      bugreports: []
 
-  - summary: |
-      Поиск товара по категории
-    status: pass
+    - summary: |
+        Поиск товара по фильтру цены "ДО"
+      status: fail
+      bugreports: []
 
-- bugreports: []
+    - summary: |
+        Фильтр цены не работает при значении ниже существующих
+      environment: |
+        Google Chrome Версия 122.0.6261.112 (Официальная сборка), (64 бит)
+        OC Windows 22000.2538
+      steps-to-reproduce: |
+        - Вводим в фильтр по цене "ДО" значение 10
+      expected-result: |
+        Должна появляться информирующая ошибка о том, что нет подходящих товаров
+      actual-result: |
+        Ничего не изменяется
+      bugreports: []
 
-- test-cases:
-  - summary: |
-      Поиск товаров по фильтру бренда
-    status: pass
+    - summary: |
+        Поиск товара по фильтру цены "ОТ"
+      status: fail
+      bugreports: []
 
-  - summary: |
-      Поиск товаров по фильтру бренда
-    status: pass
+    - summary: |
+        Просмотр карточки товара
+      status: pass
+      bugreports: []
 
-- bugreports:
-  - summary: |
-      Сломался фильтр по бренду при использовании фильтра по категории
-    environment: |
-      Google Chrome Версия 122.0.6261.112 (Официальная сборка), (64 бит)
-      OC Windows 22000.2538
-    steps-to-reproduce: |
-      - Выбираем пустой фильтр по категории
-      - Выбираем любой фильтр товара с брендом
-    expected-result: |
-      Должна происходить фильтрация по выбранному бренду
-    actual-result: |
-      Не происходит никаких изменений
+    - summary: |
+        Добавление товара в корзину со страницы магазина
+      status: pass
+      bugreports: []
 
-- test-cases:
-  - summary: |
-      Поиск товара по фильтру цены "ДО"
-    status: fail
+    - summary: |
+        Добавление товара в корзину из карточки товара
+      status: pass
+      bugreports: []
 
-  - summary: |
-      Поиск товара по фильтру цены "ДО"
-    status: fail
+    - summary: |
+        Удаление товара из корзины
+      status: pass
+      bugreports: []
 
-- bugreports:
-  - summary: |
-      Фильтр цены не работает при значении ниже существующих
-    environment: |
-      Google Chrome Версия 122.0.6261.112 (Официальная сборка), (64 бит)
-      OC Windows 22000.2538
-    steps-to-reproduce: |
-      - Вводим в фильтр по цене "ДО" значение 10
-    expected-result: |
-      Должна появляться информирующая ошибка о том, что нет подходящих товаров
-    actual-result: |
-      Ничего не изменяется
+    - summary: |
+        Заказ выбранного товара
+      status: fail
+      bugreports: []
 
-- test-cases:
-  - summary: |
-      Поиск товара по фильтру цены "ОТ"
-    status: fail
+    - summary: |
+        Автоматическая очистка корзины после совершения заказа
+      status: fail
+      bugreports: []
 
-  - summary: |
-      Поиск товара по фильтру цены "ОТ"
-    status: fail
+    - summary: |
+        Обновление остатков товара после заказа
+      status: fail
+      bugreports: []
 
-- bugreports: []
+    - summary: |
+        Переключение между страницами
+      status: fail
+      bugreports: []
 
-- test-cases:
-  - summary: |
-      Просмотр карточки товара
-    status: pass
-
-  - summary: |
-      Просмотр карточки товара
-    status: pass
-
-- bugreports: []
-
-- test-cases:
-  - summary: |
-      Добавление товара в корзину со страницы магазина
-    status: pass
-
-  - summary: |
-      Добавление товара в корзину со страницы магазина
-    status: pass
-
-- bugreports: []
-
-- test-cases:
-  - summary: |
-      Добавление товара в корзину из карточки товара
-    status: pass
-
-  - summary: |
-      Добавление товара в корзину из карточки товара
-    status: pass
-
-- bugreports: []
-
-- test-cases:
-  - summary: |
-      Удаление товара из корзины
-    status: pass
-
-  - summary: |
-      Удаление товара из корзины
-    status: pass
-
-- bugreports: []
-
-- test-cases:
-  - summary: |
-      Заказ выбранного товара
-    status: fail
-
-  - summary: |
-      Заказ выбранного товара
-    status: fail
-
-- bugreports: []
-
-- test-cases:
-  - summary: |
-      Автоматическая очистка корзины после совершения заказа
-    status: fail
-
-  - summary: |
-      Автоматическая очистка корзины после совершения заказа
-    status: fail
-
-- bugreports: []
-
-- test-cases:
-  - summary: |
-      Обновление остатков товара после заказа
-    status: fail
-
-  - summary: |
-      Обновление остатков товара после заказа
-    status: fail
-
-- bugreports: []
-
-- test-cases:
-  - summary: |
-      Переключение между страницами
-    status: fail
-
-  - summary: |
-      Переключение между страницами
-    status: pass
-
-- bugreports: []
-
-- test-cases:
-  - summary: |
-      Переход на начальную страницу
-    status: fail
-
-  - summary: |
-      Переход на начальную страницу
-    status: pass
-
+    - summary: |
+        Переход на начальную страницу
+      status: fail
+      bugreports: []
