@@ -1,5 +1,5 @@
 ---
-- test-cases:
+test-cases:
   - summary: |
       Поиск товара по ключевым словам, например, IPhone
     status: pass
@@ -112,7 +112,7 @@
       Переход на начальную страницу
     status: pass
 
-- bugreports:
+bugreports:
   - summary: |
       Сломался фильтр по бренду при использовании фильтра по категории
     environment: |
