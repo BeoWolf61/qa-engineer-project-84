@@ -49,9 +49,37 @@
   status: fail
 
 - summary: |
-    Переключение между страницами
-  status: fail
+    Переключение между страницами вперед
+  status: pass
 
 - summary: |
     Переход на начальную страницу
   status: fail
+
+- summary: |
+    Переключение между страницами назад
+  status: pass
+
+- summary: |
+    Закрытие окна успешно оформленного заказа
+  status: pass
+
+- summary: |
+    Оплата заказа
+  status: fail
+
+- summary: |
+    Оформление заказа на серверном уровне
+  status: fail
+
+- summary: |
+    Просмотр информации из каталога
+  status: pass
+
+- summary: |
+    Просмотр каталога после добавления товара в корзину
+  status: pass
+
+- summary: |
+    Возврат к выбору товара из корзины
+  status: pass
