@@ -296,38 +296,3 @@
   actual-result: |
     Ничего не происходит
 
-- summary: |
-    
-  environment: |
-    Google Chrome Версия 122.0.6261.112 (Официальная сборка), (64 бит)
-    OC Windows 22000.2538
-  steps-to-reproduce: |
-    - 
-  expected-result: |
-    
-  actual-result: |
-
-
-- summary: |
-    
-  environment: |
-    Google Chrome Версия 122.0.6261.112 (Официальная сборка), (64 бит)
-    OC Windows 22000.2538
-  steps-to-reproduce: |
-    - 
-  expected-result: |
-    
-  actual-result: |
-
-
-- summary: |
-    
-  environment: |
-    Google Chrome Версия 122.0.6261.112 (Официальная сборка), (64 бит)
-    OC Windows 22000.2538
-  steps-to-reproduce: |
-    - 
-  expected-result: |
-    
-  actual-result: |
-    
